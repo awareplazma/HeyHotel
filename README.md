@@ -55,24 +55,23 @@ src/app/
   - Reactive Forms: To handle booking form validation
 
 ## Assumptions
-  i. API provides consistent data types and field names
- ii. POST requests handled via form submission 
-iii. Part of a larger enterprise system
- iv. Booking availability updates only on the front-end/localStorage
+  - API provides consistent data types and field name
+  - POST requests handled via form submission
+  - Part of a larger enterprise system
+  - Booking availability updates only on the front-end/localStorage
  
 ## Screenshots
 
 #Desktop View
-
-Room List
+  - Room List
 
 <img width="1280" height="560" alt="image" src="https://github.com/user-attachments/assets/35c4fb83-da04-4610-81b1-0da48b049f49" />
 
-Room Booking
+  - Room Booking
 
 <img width="1280" height="563" alt="image" src="https://github.com/user-attachments/assets/4316d7ab-e8f0-41b3-9e90-3883bb42b03a" />
 
-Toast Notification & Changed State
+  - Toast Notification & Changed State
 
 <img width="1280" height="566" alt="image" src="https://github.com/user-attachments/assets/cc8eb0c5-48d2-4741-a54f-5183c9ca9b91" />
 
