@@ -21,6 +21,7 @@ HeyHotel is a front-end Angular application that displays available hotel rooms 
 
 ## Project Structure
 
+```text
 src/app/
 ├─ app.ts -> main entry point, root component
 ├─ header/ -> header/navbar component
@@ -29,7 +30,7 @@ src/app/
 │ ├─ room.model.ts -> Room interface
 │ └─ room.service.ts -> API service using HttpClient
 ├─ index. html
- ─ main.ts
+└─ main.ts
 
  
 ## Installation & Running
@@ -47,11 +48,11 @@ src/app/
 5. Go to http://localhost:4200 on any web browser
    
 ## Design Decisions
-  i. Project Structure: To enforce Seperation of Concerns (SoC)
- ii. Standalone Components: To simplify structure without NgModules
-iii. RoomCard (Components): To encapsulates room card UI + booking modal
- iv. Bootstrap Grid & Utilities: To create responsive layout and consistent styling
-  v. Reactive Forms: To handle booking form validation
+  - Project Structure: To enforce Seperation of Concerns (SoC)
+  - Standalone Components: To simplify structure without NgModules
+  - RoomCard (Components): To encapsulates room card UI + booking modal
+  - Bootstrap Grid & Utilities: To create responsive layout and consistent styling
+  - Reactive Forms: To handle booking form validation
 
 ## Assumptions
   i. API provides consistent data types and field names
