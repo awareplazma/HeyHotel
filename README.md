@@ -45,7 +45,7 @@ src/app/
 3. Run application
    ng serve
    
-5. Go to http://localhost:4200 on any web browser
+4. Go to http://localhost:4200 on any web browser
    
 ## Design Decisions
   - Project Structure: To enforce Seperation of Concerns (SoC)
@@ -58,25 +58,43 @@ src/app/
   - API provides consistent data types and field name
   - POST requests handled via form submission
   - Part of a larger enterprise system
-  - Booking availability updates only on the front-end/localStorage
+  - Booking availability updates only on the front-end
  
 ## Screenshots
 
 #Desktop View
   - Room List
 
+    
+
 <img width="1280" height="560" alt="image" src="https://github.com/user-attachments/assets/35c4fb83-da04-4610-81b1-0da48b049f49" />
+
+
 
   - Room Booking
 
+
+
 <img width="1280" height="563" alt="image" src="https://github.com/user-attachments/assets/4316d7ab-e8f0-41b3-9e90-3883bb42b03a" />
 
+
+
+
   - Toast Notification & Changed State
+
+
+
 
 <img width="1280" height="566" alt="image" src="https://github.com/user-attachments/assets/cc8eb0c5-48d2-4741-a54f-5183c9ca9b91" />
 
 
+
+
+
 #Mobile View (Chrome DevTools)
+
+
+
 
 <img width="516" height="559" alt="image" src="https://github.com/user-attachments/assets/49c21ba2-bd28-4660-82ac-08fcddd85071" />
 
