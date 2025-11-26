@@ -9,7 +9,6 @@ HeyHotel is a front-end Angular application that displays available hotel rooms 
 - Search rooms by name
 - Book rooms through a modal form (Guest Name, Check-in, Check-out)
 - Toast notification after successful booking
-- Uses localStorage to persist bookings
 - Fully responsive design (desktop + mobile)
 - Modular structure with standalone components
 
@@ -19,7 +18,6 @@ HeyHotel is a front-end Angular application that displays available hotel rooms 
 - Bootstrap 5 (utility classes + grid)
 - RxJS and Angular HttpClient
 - Angular Reactive Forms
-- LocalStorage for booking persistence
 
 ## Project Structure
 
@@ -54,7 +52,6 @@ src/app/
 iii. RoomCard (Components): To encapsulates room card UI + booking modal
  iv. Bootstrap Grid & Utilities: To create responsive layout and consistent styling
   v. Reactive Forms: To handle booking form validation
-vi. LocalStorage: To simulates backend data persistence
 
 ## Assumptions
   i. API provides consistent data types and field names
@@ -64,7 +61,7 @@ iii. Part of a larger enterprise system
  
 ## Screenshots
 
-#Desktop
+#Desktop View
 
 Room List
 
@@ -74,18 +71,14 @@ Room Booking
 
 <img width="1280" height="563" alt="image" src="https://github.com/user-attachments/assets/4316d7ab-e8f0-41b3-9e90-3883bb42b03a" />
 
-Toast Notification
+Toast Notification & Changed State
 
 <img width="1280" height="566" alt="image" src="https://github.com/user-attachments/assets/cc8eb0c5-48d2-4741-a54f-5183c9ca9b91" />
 
-Changed State (Data Persistence)
 
+#Mobile View (Chrome DevTools)
 
-
-
-
-
-Mobile (Google Inspector)
+<img width="516" height="559" alt="image" src="https://github.com/user-attachments/assets/49c21ba2-bd28-4660-82ac-08fcddd85071" />
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
