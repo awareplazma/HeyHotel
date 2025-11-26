@@ -1,0 +1,58 @@
+
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">Room {{ room.room_name }}</h5>
+      <p class="card-text">Type: {{ room.room_type }}</p>
+      <p class="card-text">Price: RM{{ room.room_price }}</p>
+      <p class="card-text">
+        Availability:
+        <span [ngClass]="{'text-success': room.room_open === 'Available','text-danger': room.room_open === 'Booked'}">
+          {{ room.room_open }}
+        </span>
+      </p>
+      <button class="btn btn-primary mt-2" (click)="openBookingModal()" [disabled]="room.room_open === 'Booked'">
+        Book
+      </button>
+    </div>
+  </div>
+
+  <!-- Booking Modal -->
+  <div class="modal fade" [class.show]="showModal" [style.display]="showModal ? 'block' : 'none'" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingModalLabel">Book Room {{ room.room_name }}</h5>
+          <button type="button" class="btn-close" (click)="closeBookingModal()"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="bookingForm" (ngSubmit)="submitBooking()">
+            <div class="mb-3">
+              <label class="form-label">Guest Name</label>
+              <input type="text" class="form-control" formControlName="guestName" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Check-in Date</label>
+              <input type="date" class="form-control" formControlName="checkIn" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Check-out Date</label>
+              <input type="date" class="form-control" formControlName="checkOut" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100" [disabled]="bookingForm.invalid">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1055">
+    <div class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true"
+         [class.show]="showToast" [class.hide]="!showToast">
+      <div class="d-flex">
+        <div class="toast-body">Booking successful for room {{ room.room_name }}!</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" (click)="closeToast()"></button>
+      </div>
+    </div>
+  </div>
+
