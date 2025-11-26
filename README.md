@@ -31,7 +31,7 @@ src/app/
 │ └─ room.service.ts -> API service using HttpClient
 ├─ index. html
 └─ main.ts
-
+```
  
 ## Installation & Running
 1. Clone the repo:  
